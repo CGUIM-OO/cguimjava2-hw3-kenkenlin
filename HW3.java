@@ -3,8 +3,8 @@ import java.util.HashMap;
 //import java.util.Scanner;
 
 /**
- * @author TODO: please add student ID and name here
- * Try to write some comments for your codes (methods, 10 points)
+ * @author TODO: B0322013 GENG ZAI,LIN
+ * This Class is probably clever debugging class I've seen. (methods, 10 points)
  */
 public class HW3 {
 	public static void main(String[] args) {
@@ -27,9 +27,9 @@ public class HW3 {
 		//printCard (5 points)
 		//getSuit (5 points)
 		Card newCard=deck.getOneCard();
-		newCard.printCard();
+		newCard.printCard(newCard.getSuit(),newCard.getRank());
 		Card newCard2=deck.getOneCard();
-		newCard2.printCard();
+		newCard2.printCard(newCard2.getSuit(),newCard2.getRank());
 		deck.shuffle();
 		if(isAllCardsCorrect(deck.getAllCards(),nDeck)){
 			if(!isShuffleWorking(deck,newCard,newCard2)){
